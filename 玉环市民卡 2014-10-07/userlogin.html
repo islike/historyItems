@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户登录</title>
+<link href="style/Global.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" language="javascript"></script>
+</head>
+
+<body>
+<div class="topbg">
+ <div class="top">
+  <a href="#" class="topl"><img src="images/login.jpg" width="511" height="56" alt="玉环市民卡" /></a>
+  <div class="topr">服务热线 : <span>96255</span></div>
+ </div>
+</div>  
+
+<div class="mid">
+<div class="top"><b class="s">个人账号登录</b><b>特约商户登录</b></div>
+<div class="l" style="display:block;">
+<ul>
+<li class="txt">用 户 名</li>
+<li class="box1"><input name="" type="text" /></li>
+<li class="txt">服务密码</li>
+<li class="box2"><input name="" type="password" /></li>
+<li class="txt">验 证 码</li>
+<li class="box3"><input name="" type="text" />
+  <img src="images/val.jpg" width="88" height="27" /><a href="#">换一张</a></li>
+<input name="" type="submit" class="btn" value="立即登录" />
+</ul>
+<div class="prompt"><span>温馨提示：</span><br/><br/>
+用户名：<br/>
+1. 全功能市民卡：请输入身份证号<br/>
+2. 玉环通卡：卡面上的20位卡号<br/>
+3. 手机市民卡：请输入身份证号<br/><br/>
+服务密码：<br/>
+1. 全功能市民卡，手机市民卡：柜面上，自己设置服务密码<br/>
+2. 玉环通卡：卡面上的20位卡号的后6位<br/></div>
+</div>
+<div class="l">
+<ul>
+<li class="txt">商户编号</li>
+<li class="box1"><input name="" type="text" /></li>
+<li class="txt">服务密码</li>
+<li class="box2"><input name="" type="password" /></li>
+<li class="txt">验 证 码</li>
+<li class="box3"><input name="" type="text" />
+  <img src="images/val.jpg" width="88" height="27" /><a href="#">换一张</a></li>
+<input name="" type="submit" class="btn" value="立即登录" />
+</ul>
+<div class="prompt"><span>温馨提示：</span><br/><br/>
+用户名：<br/>
+1. 全功能市民卡：请输入身份证号<br/>
+2. 玉环通卡：卡面上的20位卡号<br/>
+3. 手机市民卡：请输入身份证号<br/><br/>
+服务密码：<br/>
+1. 全功能市民卡，手机市民卡：柜面上，自己设置服务密码<br/>
+2. 玉环通卡：卡面上的20位卡号的后6位<br/></div>
+</div>
+<div class="right"><img src="images/card.jpg" alt="社会保障卡" width="368" height="410" /></div>
+</div>
+
+<div class="bottom">主办单位：玉环县市民卡有限公司   版权所有：玉环县市民卡有限公司备案号：浙ICP备11064687号</div>
+<script type="text/javascript">
+$(".mid .top b").hover(function(){
+	$(".mid .top b").removeClass("s");
+	$(this).addClass("s");
+	$(".mid .l").hide();
+	$(".mid .l").eq($(this).index()).show();
+},function(){
+	return;
+})
+</script>
+</body>
+</html>

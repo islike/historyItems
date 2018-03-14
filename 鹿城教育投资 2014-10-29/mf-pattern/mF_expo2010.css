@@ -1,0 +1,13 @@
+/*=========mF_expo2010 --2010世博主题========*/
+.mF_expo2010{position:relative;}
+.mF_expo2010 .loading{ position:absolute; width:100%; height:100%; background:#fff url(img/loading.gif) center no-repeat; z-index:9;}
+.mF_expo2010 .pic li{position:absolute;}
+.mF_expo2010 .txt_bg{position:absolute;bottom:0;z-index:1;height:50px;width:100%;background:#000;filter:alpha(opacity=40);opacity:0.4;}/*标题背景*/
+.mF_expo2010 .txt li{position:absolute;z-index:2;left:0;height:50px;line-height:50px; overflow:hidden}
+.mF_expo2010 .txt li a{display:block;color:#fff;padding-left:10px;font-size:14px;text-decoration:none; font-family:'微软雅黑'}/*标题样式*/
+.mF_expo2010 .txt li a:hover{ text-decoration:underline; color:#FFF;}
+.mF_expo2010 .num{position:absolute;z-index:3;bottom:18px;right:5px;}
+.mF_expo2010 .num li{float:left;position:relative;width:10px;height:10px;overflow:hidden;text-align:center;margin-right:8px;cursor:pointer;}
+.mF_expo2010 .num li a{position:absolute;z-index:2;display:block;color:#fff;width:100%;height:100%;top:0;left:0;text-decoration:none}/*按钮样式*/
+.mF_expo2010 .num li a{font-size:0;line-height:0;width:10px;height:10px; background:url(../images/focusp.png);_background:url(../images/focusp.gif)}
+.mF_expo2010 .num li.hover a,.mF_expo2010 .num li.current a{ background-position:right top;}/*当前/悬停按钮*/

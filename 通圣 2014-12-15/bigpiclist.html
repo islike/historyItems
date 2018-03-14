@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="logo">
+  <a href="#" class="l"><img src="images/logo.jpg" width="316" height="54" alt=""/></a>
+  <a class="r"><img src="images/logor.jpg" width="355" height="37" alt=""/></a>
+</div>
+<div class="menubg">
+  <ul class="menu">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT US</a></li>
+    <li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">NEWS</a></li>
+    <li><a href="#">CERTIFICATES</a></li>
+    <li><a href="#">DOWNLOAD</a></li>
+    <li><a href="#">CONTACT US</a></li>
+    <div class="s">
+     <!-- {%get name=search class=mid:1,tid:2,att:0%}
+       <form name="infosearch" method="post" action="{%$link%}">
+       <input type="hidden" name="lng" value="{%$lng%}">
+       <input type="hidden" name="mid" value="{%$mid%}">-->
+       <form><input name="submitsearch" type="submit" class="search btn"  value="" />
+       <input type="text" class="text1 keyword" id="keyword" name="keyword"/></form>
+      <!-- </form>
+      {%/get%}-->
+    </div>  
+  </ul>
+</div>
+
+<div class="container">
+  <ul class="subleft">
+    <div class="t">PRODUCT CATEGORIES</div>
+    <li><a href="" class="click">Lighting</a>
+      <ul style="display:none;">
+        <li><a href="#">- sunshine</a></li>
+      </ul>
+    </li>
+    <li><a href="">Power Distribution System</a></li>
+    <li><a href="">Industrial Control Devices</a></li>
+    <li><a href="">Electrical Accessories</a></li>
+    <li><a href="">Instruments & Meters</a></li>
+  </ul>
+  <div class="subright">
+    <div class="location">Your present location : <a href="#">product categories</a></div>
+    <ul class="bigpiclist">
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+      <li><a href="#"><div class="bg"></div><img src="images/bigpiclist.jpg" width="186" height="268" alt=""/><div class="b"></div><span>CB TEST CERTIFICATE</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <div class="c">Tosun Electric Co.,Ltd. &nbsp;&nbsp;&nbsp;&nbsp; Copyright ©2009 TOSUN All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp; Design: <a href="http://cnvp.com.cn">CNVP</a></div>
+</div>
+<div class="ewm" id="ewm">
+  <div class="t"><a href="#">TOP</a><a href="#">ONLINE SERVICE</a>
+  </div><div class="s"><a href="#">SKYPE</a><a href="#">QQ</a></div>
+</div>
+<script type="text/javascript" language="javascript">
+
+$(".subleft li .click").click(function(){
+	$(this).parent().find("ul").showToggle();
+	});
+$(".subleft li:last").addClass("last");
+</script>
+</body>
+</html>

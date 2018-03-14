@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none;}
+body{ background:#f8f8f8; font-family:"微软雅黑";}
+.topbg{height:110px; border-bottom:5px solid #077cc7; background:#FFF;}
+.top{width:1000px; height:110px; margin:0 auto; line-height:110px;}
+.topl{float:left; margin-top:26px;}
+.topr{float:right; color:#666; font-size:15px; font-weight:bold; background: url(../images/tel_icon.jpg) no-repeat left center; padding-left:18px;}
+.topr span{color:#ea5901;}
+
+.mid{width:998px; border:#ddd 1px solid; border-bottom:#ddd 4px solid; overflow:hidden; margin:42px auto; background:#fefefe;}
+.mid .top{ height:49px; line-height:48px; background:url(../images/topbg.jpg) repeat-x; font-size:18px; color:#454545;}
+.top b{border-right:1px solid #ddd; width:190px; float:left; text-align:center; display:block;}
+.top .s{color:#0065a7; background:#FFF; border-bottom:1px solid #fff;}
+
+.l{ float:left; overflow:hidden; margin:0; display:none;}
+.l ul{margin:40px 80px;}
+.l ul .txt{ background:url(../images/red_icon.jpg) no-repeat left center; padding-left:18px; font-size:15px; color#555; height:46px; line-height:46px; width:320px;}
+.box1 input{height:42px; width:278px; background:url(../images/inputbox1.jpg) no-repeat; border:none; padding-left:42px; overflow:hidden;}
+.box2 input{height:42px; width:278px; background:url(../images/inputbox2.jpg) no-repeat; border:none; padding-left:42px; overflow:hidden;}
+.box3{ line-height:42px;}
+.box3 input{height:42px; background:url(../images/ipoutbox3.jpg) no-repeat; width:150px; border:none;}
+.box3 img{margin:7px 14px;}
+.box3 a{color:#077cc7;}
+.box3 a:hover{text-decoration:underline; color:#077cc7;}
+.prompt{margin-left:80px; margin-bottom:30px; color:#dd1a1a; font-size:12px; line-height:18px;}
+.prompt span{ font-size:14px;}
+.btn{ background: url(../images/loginbtn.gif) no-repeat;font-size:18px; text-align:center; width:320px; height:46px; line-height:46px; border:none; border-radius:6px; margin-top:20px; color:#FFF; font-weight:bold;}
+.mid .right{margin-top:70px; margin-right:90px; float:right;}
+
+.bottom{ background:#FFF; border-top:2px solid #e2e2e2; height:70px; line-height:70px; text-align:center; color:#787878; font-size:12px; margin:0 auto;}
+
+/*==============================================================user login end=====*/
+
+.pc{width:1000px; overflow:hidden; margin:40px auto;}
+.pc .pl{ background:#FFF; width:198px; height:661px; border-top:solid 3px #077cc7;border-right:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 4px;border-left:#e2e2e2 solid 1px;float:left; }
+.pl li{ padding-left:34px; background:url(../images/p3.jpg) no-repeat 20px center; height:37px; line-height:37px;color:#555;}
+.pl li a{ font-size:14px; color:#555;}
+.pl li a:hover{ text-decoration:underline; color:#555;}
+.pc .pl .h1{ padding-left:20px; color:#006eb3; font-size:18px; font-weight:bold; line-height:52px; height:52px; width:162px; background:url(../images/p1.jpg) no-repeat right center; }
+.pl .h2{ height:40px; line-height:40px; font-size:15px; font-weight:bold; color:#333; padding-left:45px; background:url(../images/p2.jpg) no-repeat 20px center; border-top:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 1px;}
+.pl .h22{ height:40px; line-height:40px; font-size:15px; font-weight:bold; color:#333; padding-left:45px; background:url(../images/p4.jpg) no-repeat 20px center;border-top:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 1px;}
+
+.recharger{background:#FFF; width:780px; height:661px; border-top:solid 3px #ff9f2b;border-right:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 4px;border-left:#e2e2e2 solid 1px;float:right; }
+.chongzhi{ margin-left:40px; margin-top:40px; float:left; overflow:hidden;}
+.chongzhi li{ height:36px; line-height:36px; background:none; margin-top:12px; padding-left:0;}
+.chongzhi li input{height:36px; width:250px; background: url(../images/inputbox.jpg) no-repeat; border:none; overflow:hidden; margin-left:12px;}
+.chongzhi .next{text-align:center; width:91px; height:36px; line-height:36px; background: url(../images/next.jpg) no-repeat;  font-weight:bold; font-size:16px; color:#fff; float:left; margin-top:16px; margin-left:92px; border:none;}
+.chongzhi .reset{ float:left;text-align:center; width:91px; height:36px;; line-height:36px; background: url(../images/reset.jpg) no-repeat; color:#555; font-weight:bold; font-size:16px; margin-top:16px; margin-left:12px; border:none;}
+.chongzhi span{color:#006eb3; font-size:14px;}
+.chongzhi .change{color:#006eb3; font-size:14px;}
+.change:hover{color:#006eb3; text-decoration:underline;}
+.tishi{ font-size:14px; color:#d73a14; margin-top:40px; margin-left:45px; float:left;}
+/*==============================================================recharge end=====*/
+.cr{background:#FFF; width:780px; height:661px; border-top:solid 3px #ff9f2b;border-right:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 4px;border-left:#e2e2e2 solid 1px;float:right; }
+.cr .t{ font-size:18px; font-weight:bold; line-height:52px; height:52px; width:100%; color:#555; border-bottom:1px solid #ddd; padding-left:20px;}
+.cr input{width:155px; height:24px; border:1px solid #d3d3d3; margin-left:12px;}
+.cr .cx{ background:url(../images/cx.jpg) no-repeat; width:60px; height:26px; line-height:26px; text-align:center; font-size:14px; font-weight:bold; color:#FFF; float:left; margin-left:12px; border:none;}
+.cr .cz{background:url(../images/cz.jpg) no-repeat; width:60px; height:26px;line-height:26px; text-align:center;  font-size:14px; font-weight:bold; color:#555; float:left; margin-left:12px; border:none;}
+
+.cr .bg{background:#eff6fb; text-align:right; font-size:13px; }
+.cr .none{background:#fff;  font-size:13px;}
+.cr .nonel{background:#fff;  font-size:13px; padding-left:12px;}
+.cr table{margin:20px 4% auto 4%;}
+.cr table b{margin-left:14px; font-size:13px;}
+

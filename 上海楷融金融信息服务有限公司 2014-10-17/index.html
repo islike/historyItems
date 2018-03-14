@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<link href="style/css.css" rel="stylesheet" type="text/css" />
+<!--<script src="style/banner.js" language="javascript"></script>-->
+<script type="text/javascript" src="js/myfocus204min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="top">
+<div class="c"><a href="#" class="logo"><img src="images/logo.jpg" width="427" height="68" /></a><div class="r"><p><a href="#">加入收藏</a> &nbsp;<a href="#">联系我们</a> &nbsp;<a href="#">设为首页</a></p><img src="images/tel.jpg" width="189" height="22" /></div></div>
+</div>
+
+<div class="nav">
+<ul>
+  <li class="l"><a href="#">首页</a></li>
+  <li><a href="#">关于我们</a></li>
+  <li><a href="#">新闻中心</a></li>
+  <li><a href="#">金融服务平台</a></li>
+  <li><a href="#">客户服务</a></li>
+  <li><a href="#">人力资源</a></li>
+  <li><a href="#">联系我们</a></li>
+</ul>
+</div>
+
+<!--<div id="banner">
+<ul class="pic">
+<li class="l1"></li>
+<li class="l2"></li>
+<li class="l3"></li>
+</ul>
+</div>-->
+<div class="foucspic">
+        	<div id="newsfocus"><div class="pic"><ul>
+              <li><a href="#"><img src="images/tempic03.jpg" /></a></li>
+              <li><a href="#"><img src="images/tempic04.jpg" /></a></li>
+              <li><a href="#"><img src="images/tempic05.jpg" /></a></li>
+                          </ul>
+                          <a href="javascript:;" class="btn"></a>
+            <a href="javascript:;" class="btn next"></a>
+                          </div></div>
+        </div>
+<script type="text/javascript">
+var newspicid = 0;
+myFocus.set({
+  id:'newsfocus',
+  pattern:'mF_expo2010',
+  time:3,
+  trigger:'mouseover',
+  width:1440,
+  height:450,
+  txtHeight:0
+});
+$(".news .t .a").hover(function(){
+	$(".news .t .a").removeClass('s');
+	$(this).addClass("s");
+	$(".news .c ul").hide();
+	$(".news .c ul").eq($(this).index()).show();
+},function(){
+	return ;
+})
+if($(".newspic li").length > 1){
+	$(".newspic ul").width($(".newspic li").length*240);
+	$(".newspic").hover(function(){	
+		$(".newspic .btn").show();
+	},function(){
+		$(".newspic .btn").hide();
+	})
+	$(".newspic .btn").click(function(){
+		if($(this).hasClass("next")){
+			if(newspicid < ($(".newspic li").length-1))
+				newspicid++;
+		}else{
+			if(newspicid > 0)
+				newspicid--;	
+		}
+		$(".newspic ul").animate({left:-newspicid*240},300);
+	})	
+}
+</script>
+
+<div class="content">
+ <ul class="plink">
+ <li><a href="#"><img src="images/p1.jpg" width="233" height="98" /><span></span><b> &nbsp; 信用贷 Credit loan</b></a></li>
+  <li><a href="#"><img src="images/p2.jpg" width="233" height="98" /><span></span><b> &nbsp; 新车消费贷 Consumer car loan</b></a></li>
+   <li><a href="#"><img src="images/p3.jpg" width="233" height="98" /><span></span><b>&nbsp; 二手车融资 Used Car Financing</b></a></li>
+    <li class="r"><a href="#"><img src="images/p4.jpg" width="233" height="98" /><span></span><b>&nbsp; 固定资产融资 Fixed asset financing</b></a></li>
+ </ul>
+ <ul class="t">
+   <li class="l">新闻中心  <span>NEWS</span><a href="#">MORE</a></li>
+   <li class="c">公司简介 <span> Company profile</span><a href="#">MORE</a></li>
+    <li class="r">金融服务平台<span>  Financial services platform </span></li>
+ </ul>
+ <ul class="lt">
+   <li><a href="#">- 经受住了去年行业重新洗牌的大考验-温州点...</a></li>
+   <li><a href="#">- 信息技术变革引领银行再造</a></li>
+    <li><a href="#">- 银行业务流程外包 BPO大力东扩</a></li>
+    <li><a href="#">- 人行分支机构劳务派遣工作的法律风险</a></li>
+ </ul>
+ <ul class="ct">
+   <img src="images/p5.jpg" width="180" height="87" />
+   　上海楷融金融信息服务有限公司注册成立于中国<br/>的金融中心——上海自贸区，座落于中国（上海）自<br/>由贸易试验区富特西三路77号，注册资金5000万元<br/>人民币，主营金融信息业务、金融机构委托的.... 
+ </ul>
+ <ul class="rt">
+ <b>金融BPO</b>
+   - <a href="#">纸币清分整点</a> - <a href="#">ATM全托管</a> - <a href="#">票据保管</a><br/> - <a href="#">远程值守</a> - <a href="#">后台客服</a> - <a href="#">其他</a> <b>金融KPO</b>
+- <a href="#">金融机具研发</a> - <a href="#">计算机技术服务</a>
+ </ul>
+
+</div>
+<div class="bottom">
+<div class="l">
+<p>版权所有 © 上海楷融金融信息服务有限公司　浙ICP备12021011号　</p>
+<div class="bdsharebuttonbox"><span>关注我们:</span> &nbsp;<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<div class="btn"><input name="" type="text" class="k" value="请输入您的关键字..." /><input name="" type="button" class="s" /></div>
+
+<!-- <div class="s"><form id='form1' method='post' action='/Search.aspx' onSubmit='return TopCheckForm();' name='form1'><input name="提交" type="submit" class="btn" value=""/><input name="Keyword" id="Keyword" type="text" data="请输入关键字" value="请输入关键字"/></form></div> -->
+</div>
+</body>
+</html>

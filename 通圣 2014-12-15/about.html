@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="logo">
+  <a href="#" class="l"><img src="images/logo.jpg" width="316" height="54" alt=""/></a>
+  <a class="r"><img src="images/logor.jpg" width="355" height="37" alt=""/></a>
+</div>
+<div class="menubg">
+  <ul class="menu">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT US</a></li>
+    <li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">NEWS</a></li>
+    <li><a href="#">CERTIFICATES</a></li>
+    <li><a href="#">DOWNLOAD</a></li>
+    <li><a href="#">CONTACT US</a></li>
+    <div class="s">
+     <!-- {%get name=search class=mid:1,tid:2,att:0%}
+       <form name="infosearch" method="post" action="{%$link%}">
+       <input type="hidden" name="lng" value="{%$lng%}">
+       <input type="hidden" name="mid" value="{%$mid%}">-->
+       <form><input name="submitsearch" type="submit" class="search btn"  value="" />
+       <input type="text" class="text1 keyword" id="keyword" name="keyword"/></form>
+      <!-- </form>
+      {%/get%}-->
+    </div>  
+  </ul>
+</div>
+
+<div class="container">
+  <ul class="subleft">
+    <div class="t">PRODUCT CATEGORIES</div>
+    <li><a href="" class="click">Lighting</a>
+      <ul style="display:none;">
+        <li><a href="#">- sunshine</a></li>
+      </ul>
+    </li>
+    <li><a href="">Power Distribution System</a></li>
+    <li><a href="">Industrial Control Devices</a></li>
+    <li><a href="">Electrical Accessories</a></li>
+    <li><a href="">Instruments & Meters</a></li>
+  </ul>
+  <div class="subright">
+    <div class="location">Your present location : <a href="#">product categories</a></div>
+    <ul class="bigpiclist">
+      <div class="about">
+      <div class="t">Brief introduction of  TOSUN</div>
+      <div class="txt">
+      We, TOSUN ELECTRIC CO., LTD. are one of the most reliable manufacturers and exporters for low tension electric
+products and illumination products in China.<br/>
+We have successfully developed and dealt with numerous electric products in high quality, such as circuit breaker, 
+AC contractor, meter, relay, control units as well as illumination items.<br/>
+We possesses full line of high-tech production equipment and great strength of technology support besides advan-
+ced designation forces powered by the first class engineering teams with super industrial computer systems. Thus, 
+our products are novel in design, excellent in workmanship and top reliable in quality. A lot of our products have ob-
+tained “TUV”, “CB” ,“SEMKO”, “CE”, “IRAM” and other international quality approvals. The products are now being 
+well sold in more than 82 countries and regions in the world.<br/>
+Moreover, our company has always paid special attention to protecting the benefit of clients’ so that both the clie-
+nts and the company are able to gain the maximum benefit from the relations between.<br/>
+We warmly look forward to establishing, reinforcing and expanding a long term fruitful collaboration relationship 
+with the reliable clients all over the world.<br/>
+<b>Let’s get busy and pull together to create a better future!</b>
+      </div>
+      <img src="images/about.jpg" width="692" height="564" alt=""/> 
+      </div>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <div class="c">Tosun Electric Co.,Ltd. &nbsp;&nbsp;&nbsp;&nbsp; Copyright ©2009 TOSUN All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp; Design: <a href="http://cnvp.com.cn">CNVP</a></div>
+</div>
+<div class="ewm" id="ewm">
+  <div class="t"><a href="#">TOP</a><a href="#">ONLINE SERVICE</a>
+  </div><div class="s"><a href="#">SKYPE</a><a href="#">QQ</a></div>
+</div>
+<script type="text/javascript" language="javascript">
+
+$(".subleft li .click").click(function(){
+	$(this).parent().find("ul").showToggle();
+	});
+$(".subleft li:last").addClass("last");
+</script>
+</body>
+</html>
